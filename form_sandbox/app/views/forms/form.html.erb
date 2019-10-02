@@ -1,0 +1,45 @@
+<%= form_tag "/form_submission_url", method: :post do %>  
+  <div>
+    Color: <input type="text" name="brick_color" value=""/>
+  </div>
+  <div>
+    Brand: <input type="text" name="brick_brand" value=""/>
+  </div>
+  <div>
+    Email: <input type="email" name="my_email">
+  </div>
+    Submit: <input type="submit" value="Create A Brick" />
+  <div>
+    Email: <input type="email" name="email" multiple>
+  </div>
+  <div>
+    Password: <input type="password" name="pwd">
+  </div>
+  <div>
+    Text: <textarea cols="30" rows="10"></textarea> 
+  </div>
+  <div>
+    Fruit_id: <select name=“fruit_id”>
+       <option value=“1">Banana</option>
+       <option value=“2”>Cherry</option>
+       <option value=“3">Lemon</option>
+     </select>
+  </div>
+  <div>
+    Checkbox: <input type=“checkbox” checked name=“carrots” value=“carrots”?>
+  </div>
+  <div>
+    Radio: <input type=“radio” checked name=“meal”>
+  </div>
+  <div>
+    
+    <%= @parameters %>
+  </div>
+  <div>
+    Datetime: <input type=“datetime-local” name=“datetime”>
+  </div>
+<% end %>
+
+<div>
+  <%= @parameters %>
+</div>

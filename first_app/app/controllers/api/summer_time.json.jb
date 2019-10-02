@@ -1,0 +1,14 @@
+{
+  message: "What is the current season?",
+  season: @summer_time
+}
+
+{
+  message: "What is the currect season",
+  season: @winter_time 
+}
+{
+  message: "What is the currect season",
+  season: @spring_time 
+
+}
