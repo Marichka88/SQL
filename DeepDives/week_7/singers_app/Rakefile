@@ -1,3 +1,7 @@
+require 'sinatra/activerecord'
+require 'sinatra/activerecord/rake'
+require './app'
+
 desc "Sinatra needs to sing"
 namespace :loud do
   task :sing do 

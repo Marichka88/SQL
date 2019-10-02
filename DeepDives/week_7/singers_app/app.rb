@@ -1,5 +1,17 @@
 require 'sinatra'
 require 'sinatra/reloader'
+require 'sinatra/activerecord'
+
+# find current (home) directory and require all files from the models folder
+current_dir = Dir.pwd
+Dir["#{current_dir}/models/*.rb"].each { |file| require file }
+
+get '/' do 
+  erb :index
+end
+
+require 'sinatra'
+require 'sinatra/reloader'
 
 get '/' do 
   "<h1>Song List</h1>
