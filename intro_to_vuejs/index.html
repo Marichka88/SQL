@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Intro To Vue.js</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+  <div id="app"> <!-- all vue.js code goes in this element -->
+    <h1>{{ message }}</h1>
+    <p>{{ name }}</p>
+    <p>{{ city }}</p>
+    <h2>{{ school }}</h2>
+    <h3>{{ country }}</h3>
+    <h4>{{ last_name }}</h4>
+    <h5>{{ job_title }}</h5>
+    <h6>{{ favorite_color }}</h6>
+    <button v-on:click="changeMessage()">Click Me</button>
+    <button v-on:click="changeName()">Try Me</button>
+    <input type="text" v-model="message">
+    <input type="text" v-model="name">
+  <input type="text" v-model="city">
+  </div> <!-- end of vue.js elements -->
+  <script src="index.js"></script>
+</body>
+</html>
